@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Registration Form</title>
+
+	   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+	   <script>
+$(document).ready(function(){
+$("#commentForm").validate();
+});
+</script>
+
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "css/styles.css" rel = "stylesheet">
+    </head>
+    <body>
+<div class="row">&nbsp;</div>
+<div class="row">
+	<div class="col-md-offset-2 col-md-8">
+		<h3>Contact Form</h3>
+	</div>
+</div>
+<div class="row"><div class="col-md-offset-2 col-md-8"><hr /></div></div>
+<div class="row">&nbsp;</div>
+
+
+<div class="col-md-offset-2 col-md-8">
+<form class="cmxform" id="commentForm" method="get" action="">
+
+<input name="name" size="25" class="required" minlength="2" />
+<div class="row">&nbsp;</div>
+<input name="email" size="25" class="required" minlength="2" />
+<div class="row">&nbsp;</div>
+<input name="URL" size="25" class="required" minlength="2" />
+<div class="row">&nbsp;</div>
+<textarea id="ccomment" name="comment" cols="90" rows="15"  class="required"></textarea>
+<div class="row">&nbsp;</div>
+<input class="submit" type="submit" value="Submit"/>
+</form>
+</div>
+
+</body>
+</html>
