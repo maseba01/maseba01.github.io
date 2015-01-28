@@ -23,13 +23,14 @@ $("#commentForm").validate();
 <div class="row"><div class="col-md-offset-2 col-md-8"><hr /></div></div>
 <div class="row">&nbsp;</div>
 
+<form class="cmxform" id="commentForm" method="get" action="">
 <div class="row">
 	<div class="col-md-offset-2 col-md-8">
 		<div class="input-group">
 	  		<span class="input-group-addon" id="sizing-addon2">
 	  			<span class="glyphicon glyphicon-user"></span>
 	  		</span>
-	  		<input type="text" id="commentForm" class="form-control" placeholder="username" aria-describedby="sizing-addon2">
+	  		<input type="text" class="form-control required" placeholder="username" aria-describedby="sizing-addon2">
 		</div>
 	</div>
 </div>
@@ -40,7 +41,7 @@ $("#commentForm").validate();
 	  		<span class="input-group-addon" id="sizing-addon2">
 	  			<span class="glyphicon glyphicon-envelope"></span>
 	  		</span>
-	  		<input type="text" id="commentForm" class="form-control required" placeholder="Email" aria-describedby="sizing-addon2">
+	  		<input type="text" class="form-control required" placeholder="Email" aria-describedby="sizing-addon2">
 		</div>
 	</div>
 </div>
@@ -51,7 +52,7 @@ $("#commentForm").validate();
 	  <span class="input-group-addon" id="sizing-addon2">
 	  	<span class="glyphicon glyphicon-globe"></span>
 	  </span>
-	  <input type="text" id="commentForm" class="form-control required" placeholder="URL" aria-describedby="sizing-addon2">
+	  <input type="text" class="form-control required" placeholder="URL" aria-describedby="sizing-addon2">
 		</div>
 	</div>
 </div>
@@ -62,7 +63,7 @@ $("#commentForm").validate();
 	  		<span class="input-group-addon" id="sizing-addon2">
 	  			<span class="glyphicon glyphicon-calendar"></span>
 	  		</span>
-	  		<input type="text" id="commentForm" class="form-control required" placeholder="Date" aria-describedby="sizing-addon2">
+	  		<input type="text" class="form-control required" placeholder="Date" aria-describedby="sizing-addon2">
 		</div>
 	</div>
 </div>
@@ -92,6 +93,6 @@ $("#commentForm").validate();
 
   <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src = "js/bootstrap.js"></script>
-
+</form>
   </body>
 </html>
