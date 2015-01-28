@@ -4,12 +4,6 @@
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
 
-<script>
-$(document).ready(function(){
-$("#commentForm").validate();
-});
-</script>
-
     <link href = "css/bootstrap.min.css" rel = "stylesheet">
     <link href = "css/styles.css" rel = "stylesheet">
 	</head>
@@ -23,17 +17,17 @@ $("#commentForm").validate();
 <div class="row"><div class="col-md-offset-2 col-md-8"><hr /></div></div>
 <div class="row">&nbsp;</div>
 
-<form class="cmxform" id="commentForm" method="get" action="">
 <div class="row">
 	<div class="col-md-offset-2 col-md-8">
 		<div class="input-group">
 	  		<span class="input-group-addon" id="sizing-addon2">
 	  			<span class="glyphicon glyphicon-user"></span>
 	  		</span>
-	  		<input type="text" class="form-control required" placeholder="username" aria-describedby="sizing-addon2">
+	  		<input type="text" class="form-control" placeholder="username" aria-describedby="sizing-addon2">
 		</div>
 	</div>
 </div>
+
 <div class="row">&nbsp;</div>
 <div class="row">
 	<div class="col-md-offset-2 col-md-8">
@@ -41,7 +35,7 @@ $("#commentForm").validate();
 	  		<span class="input-group-addon" id="sizing-addon2">
 	  			<span class="glyphicon glyphicon-envelope"></span>
 	  		</span>
-	  		<input type="text" class="form-control required" placeholder="Email" aria-describedby="sizing-addon2">
+	  		<input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon2">
 		</div>
 	</div>
 </div>
@@ -52,7 +46,7 @@ $("#commentForm").validate();
 	  <span class="input-group-addon" id="sizing-addon2">
 	  	<span class="glyphicon glyphicon-globe"></span>
 	  </span>
-	  <input type="text" class="form-control required" placeholder="URL" aria-describedby="sizing-addon2">
+	  <input type="text" class="form-control" placeholder="URL" aria-describedby="sizing-addon2">
 		</div>
 	</div>
 </div>
@@ -63,7 +57,7 @@ $("#commentForm").validate();
 	  		<span class="input-group-addon" id="sizing-addon2">
 	  			<span class="glyphicon glyphicon-calendar"></span>
 	  		</span>
-	  		<input type="text" class="form-control required" placeholder="Date" aria-describedby="sizing-addon2">
+	  		<input type="text" class="form-control" placeholder="Date" aria-describedby="sizing-addon2">
 		</div>
 	</div>
 </div>
@@ -71,7 +65,7 @@ $("#commentForm").validate();
 <div class="row">&nbsp;</div>
 	<div class="row">
 		<div class="col-md-offset-2 col-md-8">
-			<textarea id="ccomment" name="comment" cols="90" rows="15"  class="required"></textarea>
+			<textarea class="required" cols="90" rows="15"></textarea>
 		</div>
 	</div>
 </div>
@@ -81,7 +75,7 @@ $("#commentForm").validate();
 <div class="row">
 	<div class="col-md-offset-2 col-md-8">
 		<div class="form-group">
-			<a href="index.html" class="btn btn-warning pull-right">
+			<a href="index.html" class="btn btn-danger pull-right">
 				<span class="glyphicon glyphicon-remove"></span>
 				Cancel
 			</a>
@@ -93,6 +87,5 @@ $("#commentForm").validate();
 
   <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src = "js/bootstrap.js"></script>
-</form>
   </body>
 </html>
